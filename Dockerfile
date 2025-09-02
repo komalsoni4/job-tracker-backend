@@ -25,4 +25,4 @@ ENV UPLOAD_DIR=/uploads
 RUN mkdir -p /uploads
 
 # Start the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "-Dspring.data.mongodb.uri=${MONGO_URI}", "app.jar"]
