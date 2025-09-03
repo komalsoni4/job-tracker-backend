@@ -11,7 +11,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/jobs")
-@CrossOrigin(origins = "*") // Allow frontend access
 public class JobController {
 
     private final jobService JobService;
