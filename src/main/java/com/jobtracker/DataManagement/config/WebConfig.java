@@ -1,4 +1,4 @@
-package com.jobtracker.DataManagement;
+package com.jobtracker.DataManagement.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
