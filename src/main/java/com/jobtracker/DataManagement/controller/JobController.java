@@ -42,10 +42,9 @@ public class JobController {
         }
     }
 
-    @GetMapping
+    @GetMapping("")
     public ResponseEntity<List<jobApplication>> getAllJobs() {
         System.out.println("in controller line 46");
         return ResponseEntity.ok(JobService.getAllJobs());
     }
 }
-
