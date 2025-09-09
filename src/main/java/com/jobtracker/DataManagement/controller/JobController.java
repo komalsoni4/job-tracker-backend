@@ -23,11 +23,11 @@ public class JobController {
 
     @PostMapping("/upload")
     public ResponseEntity<jobApplication> uploadJob(
-            @RequestParam String company,
-            @RequestParam String role,
-            @RequestParam String location,
-            @RequestParam String jobId,
-            @RequestParam String url,
+            @RequestParam(required = false) String company,
+            @RequestParam(required = false) String role,
+            @RequestParam(required = false) String location,
+            @RequestParam(required = false) String jobId,
+            @RequestParam(required = false) String url,
             @RequestParam(required = false) MultipartFile resume
     ) {
         try {

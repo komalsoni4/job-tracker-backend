@@ -47,11 +47,25 @@ public class jobService {
 
         // Save job data
         jobApplication job = new jobApplication();
-        job.setCompany(company);
-        job.setRole(role);
-        job.setLocation(location);
-        job.setJobId(jobId);
-        job.setUrl(url);
+        if (company != null) {
+            job.setCompany(company);
+        }
+        if (role != null) {
+            job.setRole(role);
+        }
+        if(location!=null)
+        {
+            job.setLocation(location);
+        }
+        if(jobId!=null)
+        {
+            job.setJobId(jobId);
+        }
+        if(url!=null)
+        {
+            job.setUrl(url);
+        }
+
         job.setDateSaved(LocalDateTime.now());
         job.setResumeFilename(filename);
         System.out.println("🛠️ Inside saveJob() line 50");
