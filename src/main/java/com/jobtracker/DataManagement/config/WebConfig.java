@@ -1,4 +1,9 @@
- package com.jobtracker.DataManagement.config;
+
+
+
+/*
+The deployed version code
+package com.jobtracker.DataManagement.config;
 // This file is empty to avoid CORS configuration conflicts.
 
 
@@ -30,3 +35,17 @@
          return new CorsFilter(source);
      }
  }
+
+ */
+
+
+package com.jobtracker.DataManagement.config;
+// This file is empty to avoid CORS configuration conflicts.
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+    // Left empty. All CORS is handled by SecurityConfig.
+}
